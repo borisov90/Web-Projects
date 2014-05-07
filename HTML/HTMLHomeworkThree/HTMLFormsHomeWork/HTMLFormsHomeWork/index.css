@@ -1,0 +1,24 @@
+﻿table {
+
+    border-collapse:collapse;
+    width: 40%;
+}
+
+table, td {
+
+    border: 2px solid black;
+}
+
+.smallcase {
+
+    width: 10%;
+}
+
+.label {
+    text-align:right;
+}
+
+.foot {
+    text-align:center;
+    background-color: lightblue;
+}

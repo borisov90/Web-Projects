@@ -1,0 +1,4 @@
+1. page.html is made to look the same way like the given task, but it's not done with Unordered List (the hyphen part)
+2. pageOne.html is done as it should be done, with UL, but it doesn't look quite like the original, because of the spacing
+3. pageTwo.html is the second task of the homework
+4. friends.html, info.html and profile.html are connected via href.

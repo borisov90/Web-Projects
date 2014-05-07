@@ -1,0 +1,6 @@
+E:\Telerik Homeworks\Homeworks to be send\HTML\HTMLHomeworkThree\HTMLHomeworkThree\bin\HTMLHomeworkThree.dll.config
+E:\Telerik Homeworks\Homeworks to be send\HTML\HTMLHomeworkThree\HTMLHomeworkThree\bin\HTMLHomeworkThree.dll
+E:\Telerik Homeworks\Homeworks to be send\HTML\HTMLHomeworkThree\HTMLHomeworkThree\bin\HTMLHomeworkThree.pdb
+E:\Telerik Homeworks\Homeworks to be send\HTML\HTMLHomeworkThree\HTMLHomeworkThree\obj\Debug\HTMLHomeworkThree.csprojResolveAssemblyReference.cache
+E:\Telerik Homeworks\Homeworks to be send\HTML\HTMLHomeworkThree\HTMLHomeworkThree\obj\Debug\HTMLHomeworkThree.dll
+E:\Telerik Homeworks\Homeworks to be send\HTML\HTMLHomeworkThree\HTMLHomeworkThree\obj\Debug\HTMLHomeworkThree.pdb

@@ -1,0 +1,6 @@
+C:\Users\Georgi\Desktop\HTML-demos\HTMLFormsHomeWork\HTMLFormsHomeWork\bin\HTMLFormsHomeWork.dll.config
+C:\Users\Georgi\Desktop\HTML-demos\HTMLFormsHomeWork\HTMLFormsHomeWork\bin\HTMLFormsHomeWork.dll
+C:\Users\Georgi\Desktop\HTML-demos\HTMLFormsHomeWork\HTMLFormsHomeWork\bin\HTMLFormsHomeWork.pdb
+C:\Users\Georgi\Desktop\HTML-demos\HTMLFormsHomeWork\HTMLFormsHomeWork\obj\Debug\HTMLFormsHomeWork.csprojResolveAssemblyReference.cache
+C:\Users\Georgi\Desktop\HTML-demos\HTMLFormsHomeWork\HTMLFormsHomeWork\obj\Debug\HTMLFormsHomeWork.dll
+C:\Users\Georgi\Desktop\HTML-demos\HTMLFormsHomeWork\HTMLFormsHomeWork\obj\Debug\HTMLFormsHomeWork.pdb

@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Web Form Sample</title>
+    <meta charset="utf-8">
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form>
+        <table>
+            <tfoot>
+                <tr>
+                    <td colspan="2" class="foot">
+                        <input type="submit" value="Submit" />
+                        <input type="button" value="Clear This Form">
+                    <td>
+                </tr>
+            </tfoot>
+            <tbody>
+
+                <tr>
+                    <td class="label">
+                        <label for="lName">Last Name</label>
+                        
+                    </td>
+                    <td>
+                        <input type="text"
+                               id="lName"
+                               placeholder="Nakov" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="fName">First Name</label>
+
+                    </td>
+                    <td>
+                        <input type="text"
+                               id="fName"
+                               placeholder="Svetlin" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="adrs">Addres</label>
+
+                    </td>
+                    <td>
+                        <textarea id="adrs"
+                                  rows="4"
+                                  cols="10"
+                                  placeholder="17 Hristo Botev street floor 3, apt 12"></textarea>
+
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="label">
+                        <label for="city">City</label>
+                    </td>
+
+                    <td>
+                        <input type="text"
+                               id="city"
+                               placeholder="Kaspichan" />
+                        <label for="state">State</label>
+                            <input type="text"
+                               width="1"
+                               id="state" />
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="zippostal">ZIP/Postal Code</label>
+                    </td>
+
+                    <td>
+                        <input type="number"
+                               id="zippostal"
+                               placeholder="9325" 
+                               class="smallcase"/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="country">Country</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="bg">Bulgaria</option>
+                            <option value="ro">Romania</option>
+                            <option value="ser">Serbia</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="phone">Phone (country code, area code, number)</label>
+                    </td>
+                    <td>
+                        (+
+
+                        <input type="number" id="phone" placeholder="359" class="smallcase" />
+                        )
+                        <input type="number" id="phone" placeholder="88" class="smallcase" />
+                        -
+                        <input type="number" id="phone" placeholder="8334343" class="smallcase" />
+
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="email">Email</label>
+                    </td>
+
+                    <td>
+                        <input type="email" name="email" id="email" placeholder="nakov@kaspichan.org" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="bdate">Birth date</label>
+                    </td>
+
+                    <td>
+                        Month
+                        <input type="number" id="bdate" placeholder="06" class="smallcase" />
+                        Day
+                        <input type="number" id="bdate" placeholder="14" class="smallcase" />
+                        Year (4 digit)
+                        <input type="number" id="bdate" placeholder="1980" class="smallcase" />
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="m">Male</option>
+                            <option value="f">Female</option>
+                            <option value="o">Other
+                            <option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="sdate">Starting date</label>
+                    </td>
+
+                    <td>
+                        <input name="sdate" type="radio" id="spring" value="sp" />
+                        <label for="sp">Spring 2006</label>
+                        <input name="sdate" type="radio" id="summer" value="sm" />
+                        <label for="sm">Summer 2006</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="label">
+                        <label for="comments">Comments/Questions</label>
+                    </td>
+
+                    <td>
+                        <textarea name="terms" cols="30" rows="4">Please send me more information about the lodging.</textarea>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>

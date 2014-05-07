@@ -1,0 +1,20 @@
+﻿table {
+    border-collapse: collapse;
+    
+}
+table, td {
+    border: 2px solid black;
+}
+.head {
+    text-align:center;
+    font-weight:bold;
+}
+
+.order {
+    width: 20px;
+}
+
+.foot {
+
+}
+

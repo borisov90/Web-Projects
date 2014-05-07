@@ -1,0 +1,6 @@
+E:\Telerik Homeworks\Homeworks to be send\HTML\semanticHtml\semanticHtml\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+E:\Telerik Homeworks\Homeworks to be send\HTML\semanticHtml\semanticHtml\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\Telerik Homeworks\Homeworks to be send\HTML\semanticHtml\semanticHtml\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\Telerik Homeworks\Homeworks to be send\HTML\semanticHtml\semanticHtml\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+E:\Telerik Homeworks\Homeworks to be send\HTML\semanticHtml\semanticHtml\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\Telerik Homeworks\Homeworks to be send\HTML\semanticHtml\semanticHtml\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

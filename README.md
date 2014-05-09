@@ -11,7 +11,7 @@
 	</header>
 	<section>
 		<menu>
-		<div id="btn">HTML</div>
+		<div id="btn" padding = 10px; margin = 10px;>HTML</div>
 		<div id="btn">CSS</div>
 		<div id="btn">Javascript</div>
 		<div id="btn">C#</div>

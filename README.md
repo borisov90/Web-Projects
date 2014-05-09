@@ -5,7 +5,7 @@ Web-Projects
 		<img src="http://academy.telerik.com/images/default-album/telerik-academy-banner.jpg?sfvrsn=2" alt="Academy logo">
 	</header>
 	<section>
-		<menu>
+	<menu>
 		<div id="btn">HTML</div>
 		<div id="btn">CSS</div>
 		<div id="btn">Javascript</div>

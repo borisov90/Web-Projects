@@ -1,0 +1,41 @@
+body {
+                background-color: #eee;
+                font-family: Arial;
+                font-size: 0.8em;
+            }
+            h1 {
+                font-weight: normal;
+                font-size: 1.2em;
+            }
+            button {
+                background: url('images/bigbutton.png');
+                height: 24px;
+                border-color: #800;
+                color: white;
+                padding-left: 16px;
+                font-size: 0.9em;
+                margin-top: 10px;
+            }
+            button:hover {
+                cursor: pointer;
+            }
+            article {
+                background-color: white;
+                border: 1px solid #b3b3b3;
+                width: 340px;
+                text-align: right;
+                padding: 16px;
+                margin: 16px 0 16px 0;
+                overflow: hidden;
+            }
+            img {
+                width: 110px;
+                float: left;
+                text-wrap: normal;
+                margin: 0 16px 0 0;
+                border: 1px solid #b3b3b3;    
+            }
+            article p {
+                text-align: justify;
+                margin: 0;
+            }

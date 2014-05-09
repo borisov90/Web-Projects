@@ -1,0 +1,30 @@
+body {
+	dl {
+		margin: 0;
+		width: 200px;
+
+		dt {
+
+			&:hover {
+
+				text-decoration: underline;
+			}
+
+			dl {
+				display:none;
+			}
+
+			&:hover >  dl {
+
+				display:inline-block;
+				margin-left: 10px
+
+			}
+
+			dt {
+				color: grey;
+			}
+		}
+	}
+
+}

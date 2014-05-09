@@ -1,0 +1,128 @@
+body, div, html, ul, li, a, aside {
+    margin: 0;
+    padding: 0;
+}
+
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+
+
+body {
+	margin-left: 8px;
+	margin-top: 8px;
+
+
+#wrapper {
+
+	width: 940px;
+	height: 180px;
+	.linear-gradient(#002E45,0%,#75CEFC,100%);
+	font-size: 2em;
+	padding: 10px;
+	font-family: sans-serif;
+
+
+.selected {
+	background-color: #163E53;
+	padding:5px;
+	border-radius: 15px;
+
+	ul{
+		display: block;
+		font-size: 0.9em;
+		width: 940px;
+		position: absolute;
+		left:0px;
+		margin-top: -10px;
+
+
+		li {
+				margin-left: 10px;
+
+				&:hover{
+					background-color: #115C83;
+					padding:5px;
+					border-radius: 15px;
+							
+					position: relative;
+					ul {
+						.linear-gradient(#FAFDFF,0%,#77D1FF,100%);
+						width: 290px;
+						border-radius: 10px;
+
+
+					li {
+						margin-top: -5px;
+						display:block;
+						float:none;
+						border-bottom: 1px solid black;
+						width: 260px;
+						
+						padding:10px;
+						
+						}
+
+					 li:last-of-type{
+					 	border:none;
+					 }
+					}
+
+				}
+
+			ul {
+
+				li {
+					display:none;
+
+				}
+			}
+		}
+	}
+}
+
+	ul {
+		list-style-type: none;
+		position:absolute;
+		top:60px;
+		left:70px;
+
+
+		li {
+			float:left;
+			margin-right: 15px;
+
+			
+
+
+			ul {
+				display:none;
+
+
+				li {
+
+					
+					ul {
+
+						li {
+
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+a {
+	text-decoration: none;
+	color: black;
+  }
+}

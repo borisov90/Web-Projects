@@ -1,0 +1,124 @@
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+//linear gradient
+
+body, section, footer, article, input, button, p, ul, li, a, span, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+//reseting the html + gradient
+
+body {
+
+    
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    /*•   font-size of the menus and the “Search” text: 14px
+•   font-size of the content title: 24px
+•   font-size of the content text: 14px
+•   All other pixel sizes will be divisible by 5 or exactly 8px.
+•   Some of the CSS properties are already given in “style.css”. You are allowed to modify them but this should not be necessary.*/
+
+   
+
+#wrapper {
+    width: 960px;
+    
+    margin-top: 0px;
+    margin-left: 10px;
+
+    header {
+        background: url('images/header-bg.png');
+        h1 {
+           color:#575E5B;
+           font-size:16px;
+           padding: 15px;
+        }
+
+         #nav{
+            position:absolute;
+            top: 15px;
+            left:723px;
+            font-size:14px;
+            color:#575E5B;
+            ul {
+                list-style-type: none;
+
+
+                
+                li {
+                    float:left;
+                    padding:10px;
+                }
+            }
+        }
+    }
+        .clear {
+            clear: both;
+        }
+
+       
+
+        #searchBar{
+            background-color: black;
+            padding: 8px;
+            margin-top: -10px;
+  
+        }
+
+        #archives {
+             padding: 0px - 10px;
+           a {
+                &:before { content:"/"; position:relative; left:-5px;}
+                
+                color:#B9C6B9;
+                text-decoration: none;
+                font-size: 14px;
+           }
+        }
+
+
+        #search {
+            a {
+                color:#B9C6B9;
+                font-size: 14px;
+                position: absolute;
+                top: 70px;
+                left: 920px;
+                text-decoration: none;
+            }
+          
+        }
+
+        #content {
+            h1 {
+                color: #575E5B;
+                font-size:24px;
+
+            }
+            article {
+                 color: #575E5B;
+                 font-size: 14px;
+                p {
+                    padding:5px 0px;
+                    text-align: left;
+                }
+            }
+        }
+    
+}
+
+
+
+}

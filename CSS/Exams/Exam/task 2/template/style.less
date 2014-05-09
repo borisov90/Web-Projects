@@ -1,0 +1,131 @@
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+//linear gradient
+
+body, section, footer, article, input, button, p, ul, li, a, span, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    
+}
+
+body {
+    margin-top: 15px;
+    margin-left: 15px;
+
+
+    #wrapper {
+        width: 960px;
+        font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+        font-size:16px;
+
+        ul {
+            list-style-type: none;
+
+            
+
+
+            li {
+                   float:left;
+                   padding: 10px 20px;
+                   border: 1px solid black;
+                   border-radius: 10px;
+                   margin-right: 10px;
+                   .linear-gradient(#25DCF2,0%,#739BE4,100%);
+                   
+
+
+                   
+
+                   &:hover {
+
+                    font-size: 1.2em;
+                    position: relative;
+                     
+                    
+
+                        
+
+                    .content {
+                        position: absolute;
+                        
+
+                        float:left;
+                        font-size:16px;
+                        display:block;
+                        width: 250px;
+                        background: none;
+                        .linear-gradient(#FCFEFE,0%,#A0D8EF,100%);
+                        padding: 5px 15px;
+                        border-radius: 5px;
+                        border:1px solid black;
+                        z-index: 1;
+
+                        h3 {
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+
+                        ul {
+                            list-style-type: square;
+
+                            li {
+                                 background: none;
+                                 border:none;
+
+                                 
+                                 a {
+                                    font-size:14px;
+                                     color:blue;
+                                  }
+                            }
+                        }
+
+                        
+
+                       
+                    }
+
+                   }
+                   
+                   a {
+                    text-decoration: none;
+                   }
+            }
+        }
+
+        .menu {
+         
+
+        }
+
+        .content {
+            display:none;
+            h3 {
+
+            }
+
+            p {
+                .bold{
+                    font-weight: bold;
+
+                }
+                a {
+                    color:blue;
+
+                }
+            }
+        }
+    }
+}
+
+//reseting the html + gradient

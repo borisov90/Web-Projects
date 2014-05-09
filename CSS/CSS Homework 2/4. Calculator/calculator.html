@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+	<table border="1">
+		<tr >
+			<th>
+				<img src="calculator.png" alt="calculator logo" width="15px" height="15px">
+				<span>Calculator</span>
+				<span>
+					<input type="button" value="_">
+					<input type="button" value="&#9633" disabled="disabled">
+					<input type="button" value="x">
+				</span>
+			</th>
+		</tr>
+		<tr>
+			<td>
+				<nav>
+					<a href="#">View</a>
+					<a href="#">Edit</a>
+					<a href="#">Help</a>
+				</nav>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="textarea" class="calculatorscreen">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div>
+					<span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span><span>0000</span>
+				</div>
+				<div>
+					<span>63</span><span class="secondmarginrow">47</span><span>32</span>
+				</div>
+				<div>
+					<span>0000</span><span>0000</span><span>1000</span><span>0111</span><span>0001</span><span>1011</span><span>1011</span><span>0111</span>
+				</div>
+				<div>
+					<span>31</span><span class="secondmarginrow">15</span><span>0</span>
+				</div>
+			</td>
+		</tr>
+			<td>
+				<div class="frame3">
+					<table>
+						<tr >
+							<td rowspan="3">
+								<form class="input">
+									<input type="radio" name="function" value="Hex"/>Hex<br/>
+									<input type="radio" name="function" value="Dec" checked />Dec<br/>
+									<input type="radio" name="function" value="Oct"/>Oct<br/>
+									<input type="radio" name="function" value="Bin"/>Bin<br/>
+								</form>
+							</td>
+							<td><input class="abuttons" type="button" name="select" value=" "></td>
+							<td><input class="bbuttons" type="button" name="select" value="Mod"></td>
+							<td><input class="abuttons" type="button" name="select" value="A"></td>
+							<td><input class="abuttons" type="button" name="select" value="MC"></td>
+							<td><input class="abuttons" type="button" name="select" value="MR"></td>
+							<td><input class="abuttons" type="button" name="select" value="MS"></td>
+							<td><input class="abuttons" type="button" name="select" value="M+"></td>
+							<td><input class="abuttons" type="button" name="select" value="M-"></td>
+						</tr>
+						<tr>
+							<td><input class="bbuttons" type="button" name="select" value="("></td>
+							<td><input class="bbuttons" type="button" name="select" value=")"></td>
+							<td><input class="abuttons" type="button" name="select" value="B"></td>
+							<td><input class="bbuttons" type="button" name="select" value="&#8592;"></td>
+							<td><input class="bbuttons" type="button" name="select" value="CE"></td>
+							<td><input class="bbuttons" type="button" name="select" value="C"></td>
+							<td><input class="bbuttons" type="button" name="select" value="&plusmn;"></td>
+							<td><input class="abuttons" type="button" name="select" value="&#8730;"></td>
+						</tr>
+						<tr>
+							<td><input class="bbuttons" type="button" name="select" value="RoL"></td>
+							<td><input class="bbuttons" type="button" name="select" value="RoR"></td>
+							<td><input class="abuttons" type="button" name="select" value="C"></td>
+							<td><input class="cbuttons" type="button" name="select" value="7"></td>
+							<td><input class="cbuttons" type="button" name="select" value="8"></td>
+							<td><input class="cbuttons" type="button" name="select" value="9"></td>
+							<td><input class="bbuttons" type="button" name="select" value="/"></td>
+							<td><input class="abuttons" type="button" name="select" value="%"></td>
+						</tr>
+					</table>
+				</div>
+				<div class="frame4">
+					<table>
+						<tr >
+							<td rowspan="3" >
+								<form class="input">
+									<input type="radio" name="function" value="Qword" checked />Qword<br/>
+									<input type="radio" name="function" value="Dword"/>Dword<br/>
+									<input type="radio" name="function" value="Word"/>Word<br/>
+									<input type="radio" name="function" value="Byte"/>Byte<br/>
+								</form>
+							</td>
+							<td><input class="bbuttons" type="button" name="select" value="Or"></td>
+							<td><input class="bbuttons" type="button" name="select" value="Xor"></td>
+							<td><input class="abuttons" type="button" name="select" value="D"></td>
+							<td><input class="cbuttons" type="button" name="select" value="4"></td>
+							<td><input class="cbuttons" type="button" name="select" value="5"></td>
+							<td><input class="cbuttons" type="button" name="select" value="6"></td>
+							<td><input class="bbuttons" type="button" name="select" value="*"></td>
+							<td><input class="abuttons" type="button" name="select" value="1/x"></td>
+						</tr>
+						<tr>
+							<td><input class="bbuttons" type="button" name="select" value="Lsh"></td>
+							<td><input class="bbuttons" type="button" name="select" value="Rsh"></td>
+							<td><input class="abuttons" type="button" name="select" value="E"></td>
+							<td><input class="cbuttons" type="button" name="select" value="1"></td>
+							<td><input class="cbuttons" type="button" name="select" value="2"></td>
+							<td><input class="cbuttons" type="button" name="select" value="3"></td>
+							<td><input class="bbuttons" type="button" name="select" value="-"></td>
+							<td rowspan="2"><input class="s1buttons" type="button" name="select" value="="></td>
+						</tr>
+						<tr>
+							<td><input class="bbuttons" type="button" name="select" value="Not"></td>
+							<td><input class="bbuttons" type="button" name="select" value="And"></td>
+							<td><input class="abuttons" type="button" name="select" value="F"></td>
+							<td colspan="2"><input class="s2buttons" type="button" name="select" value="0"></td>
+							<td><input class="abuttons" type="button" name="select" value="."></td>
+							<td><input class="bbuttons" type="button" name="select" value="+"></td>
+						</tr>
+					</table>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

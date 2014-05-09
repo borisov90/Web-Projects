@@ -1,0 +1,212 @@
+
+
+body, section, footer, article, input, button, p, ul, li, a, span, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    border: 1px solid#a8a8a8;
+    width:100%;
+}
+
+#left-sidebar {
+    background-color: #f1f1f1;
+    width:15%;
+    float: left;
+    padding-left: 5px;
+}
+
+    #left-sidebar > header {
+        padding: 15px 0px 15px 0px;
+    }
+
+    #left-sidebar header input {
+        width: 20px;
+        height: 20px;
+    }
+
+    #left-sidebar header div a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #left-sidebar header div, #left-sidebar header input {
+        display: inline;
+    }
+
+    #left-sidebar article header {
+        color: #9b2524;
+        font-weight: bolder;
+        padding: 0;
+    }
+
+    #left-sidebar article ul {
+        list-style-type: none;
+        padding-left: 0px;
+        margin-top: 0;
+    }
+
+        #left-sidebar article ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
+        #left-sidebar article ul li:hover a {
+            text-decoration: underline;
+            color: #9b2524;
+            font-size:20px;
+        }
+
+#central-part {
+    float: left;
+    padding: 5px;
+      width:60%;
+    border: 2px solid #bfbfbf;
+    background-color: white;
+}
+
+    #central-part > header div:first-child {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    #central-part > header div:first-child {
+        font-size: 26px;
+        font-weight: bold;
+        padding-bottom: 30px;
+    }
+
+.button button {
+    background-color: white;
+    border: 2px solid black;
+    width: 120px;
+    padding: 2px;
+}
+
+.button button .left {
+float:left;
+}
+
+.button button .right {
+float:right;
+}
+
+#central-part hr {
+    color: #a7a7a7;
+    background-color: #a7a7a7;
+    height: 3px;
+}
+
+#central-part article header {
+    color: white;
+    background-color: #808080;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+#central-part article p span, #central-part article p a {
+    font-size: 18px;
+}
+
+#central-part article p a {
+    color: #9b2524;
+    display: block;
+    padding: 20px 20px;
+    padding-left:5px;
+}
+
+#central-part article p img {
+    overflow: hidden;
+}
+
+#central-part article p span {
+    font-weight: bold;
+    padding: 20px;
+    padding-left: 5px;
+}
+
+#central-part article p img, #central-part article p img span {
+    float: left;
+}
+
+#central-part footer {
+    padding-bottom: 30px;
+}
+
+#right-sidebar {
+    float: left;
+      width:20%;
+}
+
+    #right-sidebar ul {
+        list-style-type: none;
+    }
+
+    #right-sidebar > ul > li {
+        border: 1px solid #9d9d9d;
+        margin: 3px;
+        background-color: white;
+        padding: 5px;
+    }
+
+    #right-sidebar ul p {
+        text-align: center;
+    }
+
+
+    #right-sidebar ul li p a {
+        color: #9b2524;
+        font-size: 16px;
+        display: block;
+    }
+
+        #right-sidebar ul li p a:hover {
+            color: black;
+            font-size: 16px;
+            display: block;
+        }
+
+    #right-sidebar ul li header {
+        color: white;
+        background-color: #808080;
+        text-align: center;
+    }
+
+    #right-sidebar ul li p input {
+        border: 1px solid black;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+        #right-sidebar ul li p input[type=button]#rounded {
+            background-color: white;
+            width: 30px;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+
+    #right-sidebar ul li p #styled {
+        background: rgb(150,213,247); /* Old browsers */
+        background: -moz-linear-gradient(left,  rgba(150,213,247,1) 6%, rgba(192,230,250,1) 9%, rgba(192,230,250,1) 9%, rgba(192,230,250,1) 90%, rgba(150,213,247,1) 94%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, right top, color-stop(6%,rgba(150,213,247,1)), color-stop(9%,rgba(192,230,250,1)), color-stop(9%,rgba(192,230,250,1)), color-stop(90%,rgba(192,230,250,1)), color-stop(94%,rgba(150,213,247,1))); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(left,  rgba(150,213,247,1) 6%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 90%,rgba(150,213,247,1) 94%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(left,  rgba(150,213,247,1) 6%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 90%,rgba(150,213,247,1) 94%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(left,  rgba(150,213,247,1) 6%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 90%,rgba(150,213,247,1) 94%); /* IE10+ */
+        background: linear-gradient(to right,  rgba(150,213,247,1) 6%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 9%,rgba(192,230,250,1) 90%,rgba(150,213,247,1) 94%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96d5f7', endColorstr='#96d5f7',GradientType=1 ); /* IE6-9 */
+
+        border: 1px solid black;
+        color: #2ac7fe;
+        width: 120px;
+        height: 40px;
+    }
+
+

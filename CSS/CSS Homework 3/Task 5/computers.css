@@ -1,0 +1,79 @@
+body, header, section, input, a, div {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+}
+
+body {
+    width: 60%;
+    font-family: Adobe Gothic Std B;
+    margin: 5px;
+    border:1px solid black;
+    padding:5px;
+}
+
+
+    body header div {
+        text-align: center;
+        padding: 10px;
+    }
+
+        body header div a {
+            color: #62cef5;
+            font-size: 20px;
+        }
+
+hr {
+    width: 90%;
+    border: 1px solid black;
+    background-color: black;
+}
+
+#computers {
+    border: 2px solid black;
+    width: 520px;
+    display: inline-block;
+}
+
+.set {
+    width: 220px;
+    margin: 5px;
+}
+
+    .set legend {
+        text-align: center;
+    }
+
+    .set input, .left-part {
+        display: inline-block;
+    }
+
+.param {
+    width: 90px;
+    display: inline-block;
+}
+
+    .param div {
+        display: inline-block;
+        padding-top: 13px;
+        padding-left: 3px;
+    }
+
+.row > div {
+    display: inline-block;
+    float: left;
+}
+
+#slider {
+    margin-top:110px;
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+vertical-align:top;
+}
+
+    #slider div div {
+        margin-top: 10px;
+    }
+
+

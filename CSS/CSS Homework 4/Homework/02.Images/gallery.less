@@ -1,0 +1,55 @@
+.image-properties
+{
+  width:768px;
+  height:480px;
+  background-size: 768px 480px;
+  background-repeat:no-repeat;
+  position:absolute;
+  left:300px;
+  top:150px;
+  border:4px solid #E3E3E3;
+}
+img{
+  border:2px solid grey;
+}
+body
+{
+  @labels
+  {
+  text-align:center;
+  }
+  input
+  { 
+  border:none;
+  outline:none;
+  background-color:white;
+  }
+  @image-1:focus, @image-2:focus, @image-3:focus, @image-4:focus, @image-5:focus, @image-6:focus
+  {
+    @extend .image-properties;
+  }
+  #image-1:focus
+  {
+    background-image:url(images/1.jpg);
+  }
+  #image-2:focus
+  {
+    background-image:url(images/2.jpg);
+  }
+  #image-3:focus
+  {
+    background-image:url(images/3.jpg);
+  }
+  #image-4:focus
+  {
+    background-image:url(images/4.jpg);
+  }
+  #image-5:focus
+  {
+    background-image:url(images/5.jpg);
+  }
+  #image-6:focus
+  {
+    background-image:url(images/6.jpg);
+  }
+}

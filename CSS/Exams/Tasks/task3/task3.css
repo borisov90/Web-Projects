@@ -1,0 +1,22 @@
+﻿html,
+body,
+div,
+p,
+a,
+input,
+ul,
+li,
+fieldset,
+button,
+input,
+select,
+option,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 16px;
+  color: #333333;
+}
+

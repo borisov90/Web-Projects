@@ -1,0 +1,11 @@
+table, td, th
+{
+border:1px solid black;
+border-collapse: collapse;
+border-color: gray;
+padding: 5px;
+border-spacing: 5px;
+}
+tr:first-of-type {background-color: #52B506;}
+th {color: white; text-align: left;}
+.greyrow {background-color: #ECECD8}

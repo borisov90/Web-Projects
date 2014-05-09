@@ -1,0 +1,18 @@
+body{background-color:#9215f2;color:#fff;font-size:12px;margin:0;padding:0;border:0;font-weight:bold;background-color:#c0c0c0;background:-webkit-linear-gradient(90deg, #a43af4 80%, #c0c0c0 100%);background:-moz-linear-gradient(90deg, #a43af4 80%, #c0c0c0 100%);background:-ms-linear-gradient(90deg, #a43af4 80%, #c0c0c0 100%);background:-o-linear-gradient(90deg, #a43af4 80%, #c0c0c0 100%);background:linear-gradient(0deg, #a43af4 80%, #c0c0c0 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000')}
+body #header-container{margin-bottom:0}body #logo-container{margin-left:50px;margin-top:30px}
+body #reg-form-container{position:absolute;top:40px;right:90px;border-radius:25px;border-width:1px}
+body #reg-form-container input{background-color:#a43af4;border-radius:25px}
+body #btn-register{border-top:1px solid #a43af4;border-bottom:1px solid #fff;border-left:1px solid #a43af4;
+border-right:1px solid #fff;padding:5px;margin-bottom:-20px;font-weight:bold;color:#fff;border-radius:25px;background-color:#a43af4;border-style:outset}
+body .nav-list{list-style-type:none}body .sub-nav-list{position:absolute;display:none;background-color:rgba(179,94,243,0.9);border-radius:5px}
+body header nav{display:inline-block;margin:20px 20px 20px 20px;padding:12px;border:2px solid #000;border-radius:15px;width:75%}
+body header nav ul li{float:left;margin:0}
+body header nav ul li a{text-decoration:none;padding:0 10px 0 10px;color:#fff;font:1.4em normal Arial}
+body header nav ul li ul{display:none}body header nav ul li:hover>a+ul{display:block;position:absolute;width:200px}
+body section article{border:1px solid #000;border-radius:25px;width:70%;margin-bottom:20px;margin-left:10px;padding-left:20px;color:#fff}
+body section article header{background:none;padding:5px}body section article header h1{font-size:1.5em;padding:0;margin-bottom:0}
+body section article footer{text-align:right;margin:10px 10px 10px}body section article footer a{color:#808080;text-decoration:none}
+body aside{position:absolute;top:30%;right:50px;width:25%;padding:5px;font-size:10px}body aside h2{font-size:1.5em}body aside ul{list-style-type:none}
+body aside li{border:1px solid #000;border-radius:5px;padding:15px;margin:15px}body aside li ul li{background:url("/images/li-dot.png") no-repeat left center;border:none;padding:0;margin-top:10px;margin-right:0;margin-bottom:10px;margin-left:0}
+body aside p{margin-top:10px;margin-right:5px;margin-bottom:10px;margin-left:5px;font-size:14px}
+body footer{text-align:center;margin-top:30px}

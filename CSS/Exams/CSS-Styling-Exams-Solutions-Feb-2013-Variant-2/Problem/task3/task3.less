@@ -1,0 +1,100 @@
+.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+//linear gradient
+
+body, section, footer, article, input, button, p, ul, li, a, span, aside, fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Verdana;
+    
+}
+
+//reseting the html + gradient
+
+body {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 960px;
+    color: #333333;
+
+    #wrapper {
+        width:420px;
+        height: 320px;
+       .linear-gradient(#6BD5FF,0%,#89FBFB,100%);
+       border: 1px solid black;
+       border-radius: 15px;
+       padding-top: 10px;
+
+    }
+
+    fieldset {
+        border: 3px solid #333333;
+        border-radius: 5px;
+        width: 360px;
+        text-align: right;
+        padding:5px 15px;
+        position:relative;
+        left:12px;
+
+        input {
+            background: black;
+            width:190px;
+            height: 25px;
+            margin-bottom:1px;
+            border-radius: 5px;
+            .linear-gradient(#6BD5FF,0%,#89FBFB,100%);
+            border: 1px solid #008FCE;
+
+
+
+        }
+       
+
+        #tb-age{
+            width: 35px;
+        }
+    }
+
+    legend {
+        font-size: 1.4em;
+        font-style: italic;
+        padding: 0px 15px;
+       
+    }
+
+    button {
+        width: 140px;
+        height: 30px;
+        border-radius: 5px;
+        border-bottom: 1px solid #000000;
+        position: relative;
+        margin-left:130px;
+        font-size:1.1em;
+        .linear-gradient(#36C2FF,0%,#83F8FB,100%);
+        color:#333333;
+        
+    }
+    
+     input[type=reset]{
+        margin-top: 10px;
+        font-size:1.1em;
+        width: 120px;
+        height: 30px;
+        border-radius: 5px;
+        border-bottom: 1px solid #000000;
+        position: relative;
+        .linear-gradient(#36C2FF,0%,#83F8FB,100%);
+        color:#333333;
+    }
+    
+
+}

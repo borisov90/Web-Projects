@@ -1,0 +1,22 @@
+dl{
+    margin:0;
+    width:200px;
+}
+dd{
+    display:none;
+}
+dt:hover{
+    text-decoration:underline;
+}
+dl:hover dd { 
+    display: block; 
+    margin-left: 10px;  
+}
+a{
+    color:black;
+    text-decoration:none;
+}
+dd a {
+    color:gray;
+    text-decoration:none;
+}

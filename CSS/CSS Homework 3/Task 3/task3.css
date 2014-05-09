@@ -1,0 +1,60 @@
+section {
+    width: 700px;
+    border-radius: 10px;
+    background-color: #3b3b3b;
+    border: 3px solid #806850;
+    overflow: hidden;
+}
+
+header {
+    background: rgb(59,59,59); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(59,59,59,1) 93%, rgba(44,44,44,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(93%,rgba(59,59,59,1)), color-stop(100%,rgba(44,44,44,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(59,59,59,1) 93%,rgba(44,44,44,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(59,59,59,1) 93%,rgba(44,44,44,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(59,59,59,1) 93%,rgba(44,44,44,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(59,59,59,1) 93%,rgba(44,44,44,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#2c2c2c',GradientType=0 ); /* IE6-9 */
+}
+
+    header div img {
+        vertical-align: bottom;
+    }
+
+    header input[type=image] {
+        padding-left: 20px;
+        padding-top: 5px;
+        width: 80px;
+        vertical-align: top;
+    }
+
+#login {
+    vertical-align: super;
+}
+
+header {
+    padding: 10px 10px 20px 10px;
+}
+
+    header div {
+        display: inline-block;
+    }
+
+        header div b {
+            color: white;
+            font-size: 1.2em;
+        }
+
+section h1 {
+    color: #fadb11;
+    padding-left: 15px;
+}
+
+section p {
+    color: #a8a8a8;
+    padding: 0px 10px 10px 10px;
+}
+
+span {
+    color: white;
+}

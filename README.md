@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Academy Progress</title>
+
 	<link rel="stylesheet" href="htmlForCV.css">
 </head>
 <body>

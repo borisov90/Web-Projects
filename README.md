@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="htmlForCV.css">
+	<link rel="stylesheet" href="README.css">
 </head>
 <body>
 	<header>

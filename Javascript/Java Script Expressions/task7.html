@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function IsPrime() {
+			var number = parseInt(document.getElementById('inputnumber').value);
+			var result = "";
+			if (number < 100 || number > 1) {
+				
+				if (number === 2 || number === 3 || number === 5 || number === 7) {
+					result = "The number is prime";
+				}
+				else if (number % 2 === 0 || number % 3 === 0 || number % 5 === 0 || number % 7 === 0 || number === 1){
+					result = "The number is not prime!"
+				}
+				else {
+					result = "The number is prime";
+				};
+
+
+			}
+			else {
+				result = "The number is out of range";
+			};
+			document.getElementById('output').innerHTML = result;
+			
+		}
+	</script>
+	<header>
+        <h1>
+           Write an expression that checks if given positive integer number n (n ≤ 100) is prime. E.g. 37 is prime.
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber">Enter the first number here:</label>
+        <input type="number" id="inputnumber">
+    </div>
+    <footer>
+        <button  onclick="IsPrime()">Is this number prime?</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

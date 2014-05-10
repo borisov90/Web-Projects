@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<script>
+	function Ask() {
+		var person = prompt("Please enter a digit","0 to 9");
+		var result = "";
+
+		switch (person) 
+		{
+			case 0: result = "zero";
+				break;
+			case 1: result = "one";
+				break;
+			case 2: result = "two";
+				break;
+			case 3: result = "three";
+				break;
+			case 4: result = "four";
+				break;
+			case 5: result = "five";
+				break;
+			case 6: result = "six";
+				break;
+			case 7: result = "seven";
+				break;
+			case 8: result = "eight";
+				break;
+			case 9: result = "nine";
+				break;
+		}
+
+		document.getElementById('output').innerHTML = result;
+	}
+	</script>
+	<input type="button" onclick="Ask()" value="Click to choose a number!">
+	<p id="output"></p>
+</body>
+</html>

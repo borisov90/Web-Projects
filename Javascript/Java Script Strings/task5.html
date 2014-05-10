@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task5</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+   
+    var str = "Is this all there is?";
+
+    jsConsole.writeLine(replaceText(str));
+   
+    function replaceText(text) {
+        var patt1 = /\s/g;
+      return text.replace(patt1,'\u00a0');
+    }
+
+    // info here --> http://stackoverflow.com/questions/10474124/replacing-spaces-with-nbsp
+    </script>
+</body>
+</html>

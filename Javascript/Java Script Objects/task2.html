@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>JS Arrays - Task 1</title>
+</head>
+<body>
+  <script>
+     Array.prototype.remove = function (element) {
+      var newarr = new Array();
+    for (var i in this) {
+        if (this[i] != element) {
+            newarr.push(this[i]);
+        }
+    }
+    return newarr;
+}
+
+var arr = [1, 2, 1, 4, 1, 1, 3, 4, 1, 111, 3, 2, 1, "1"];
+
+var copiedArr = arr.remove(1);
+
+for (var i in copiedArr) {
+    document.write(copiedArr[i] + "</br>");
+}
+	</script>
+</body>
+</html>

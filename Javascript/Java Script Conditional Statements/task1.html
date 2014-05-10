@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	function Compare() {
+		var firstNumber = parseInt(document.getElementById('inputnumber1').value);
+		var secondNumber = parseInt(document.getElementById('inputnumber2').value);
+		var result;
+
+		if (firstNumber > secondNumber) {
+			result = "The first number ["+ firstNumber + "] is bigger than the second one!";
+		}
+		else if (secondNumber > firstNumber) {
+			result = "The second number [" + secondNumber + "] is bigger than the first one!"
+		}
+		else {
+			result = "The two numbers are equal!"
+		}
+
+		document.getElementById('output').innerHTML = result;
+	}
+</script>
+	<header>
+        <h1>
+          Write an if statement that examines two integer variables and exchanges their values if the first one is greater than the second one.
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber1">Enter the first number</label>
+        <input type="number" id="inputnumber1">
+        <label for="inputnumber2">Enter the second number</label>
+        <input type="number" id="inputnumber2">
+    </div>
+    <footer>
+        <button  onclick="Compare()">Compare</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

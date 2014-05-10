@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task7</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+    var url = "http://www.devbg.org/forum/index.php";
+
+        function extractHtml(input) {
+            var regex = new RegExp("(.+)://(.+?)(/.*)");
+            var match = input.match(regex);
+
+            var res = {
+                protocol: match[1],
+                server: match[2],
+                resource: match[3],
+            }
+            return res;
+        }
+
+        var res = extractHtml(url);
+        for (var i in res) {
+            jsConsole.writeLine(res[i]);
+        }
+    </script>
+</body>
+</html>

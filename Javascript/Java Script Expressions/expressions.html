@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function OddOrEven() {
+        var input = parseInt(document.getElementById('inputnumber').value);
+        var result = "The number is ";
+
+        if (input % 2 === 0) {
+
+            result+="even";
+        }
+        else {
+            result +="odd";
+        };
+        document.getElementById('output').innerHTML = result;
+    }
+    </script>
+
+    <header>
+        <h1>
+            Write an expression that checks if given integer is odd or even.
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber">Enter number here:</label>
+        <input type="number" id="inputnumber">
+    </div>
+    <footer>
+        <button  onclick="OddOrEven()">odd or even?</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions - Calling Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<div id="output"></div>
+	<script src="scripts/js-console.js"></script>		   
+	<script>		   
+		var text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fermentum ultrices lectus, at feugiat magna sodales vitae. Nullam pretium ligula dictum, malesuada orci dictum, ullamcorper purus. Etiam tincidunt volutpat tortor vel volutpat. Integer libero tortor, consectetur id pharetra nec, eleifend non sapien. Quisque ut imperdiet nisl. Donec dapibus augue neque, vel laoreet nulla egestas eget. Morbi massa odio, ultrices a lacus eu, tristique tincidunt lorem. Curabitur varius laoreet velit. Quisque vulputate nibh ut metus ultricies lobortis. Donec porttitor viverra neque eget volutpat. Duis ut hendrerit libero. Phasellus semper eget urna sed hendrerit. Quisque commodo leo erat, eu auctor eros ultrices ut. Aliquam pretium risus sed arcu rhoncus, sed pellentesque dui posuere. Phasellus sed posuere enim.";
+        var wordToSearch = " is ";
+        var isCaseSensitive = false;
+
+        CountOccurenceWord(text, wordToSearch);
+        CountOccurenceWord(text, wordToSearch, true);
+
+        function CountOccurenceWord(text, wordToSearch, isCaseSensitive) {
+            isCaseSensitive = isCaseSensitive || false;
+            var countSearchedWord = 0;
+
+            if (isCaseSensitive === false) {
+                var strArr = text.split(wordToSearch); //split is case-insensitive
+
+                for (var str in strArr) {
+                    countSearchedWord++;
+                }
+                jsConsole.writeLine("The count of word '" + wordToSearch + "' (case-insensitive search)  is: " + countSearchedWord)
+            }
+            else {
+                var index = text.indexOf(wordToSearch);//indexOf is case-sensitive
+
+                while (index >= 0) {
+                    countSearchedWord++;
+                    index = text.indexOf(wordToSearch, index+1);
+                }
+                jsConsole.writeLine("The count of word '" + wordToSearch + "' (case-sensitive search)  is: " + countSearchedWord)
+            }
+        }
+       
+	</script>
+</body>
+</html>

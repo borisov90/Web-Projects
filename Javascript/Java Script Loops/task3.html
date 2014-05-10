@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	function Print() {
+		var number = parseInt(document.getElementById('input').value);
+		var min;
+		var max;
+		var arr = number.split(" ");
+		for (var i = 0; i < arr.length; i++) {
+				if (arr[i] < min) {
+					min = arr[i];
+				}
+				if (arr[i] > max) {
+					max = arr[i];
+				}
+		};
+
+		var result = "Min value: " + min + " Max value: " + max;
+		document.getElementById("output").innerHTML = result;
+	}
+</script>
+	<header>Write a script that finds the max and min number from a sequence of numbers. Enter numbers on a single line with space between them</header>
+	<input type="number" id="input">
+	<button onclick="Print()">Print numbers!</button>
+	<p id="output"></p>
+</body>
+</html>

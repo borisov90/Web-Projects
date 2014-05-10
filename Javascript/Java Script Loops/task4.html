@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Properties</title>
+</head>
+<body>
+    <div id="js-console">
+    </div>
+    
+    <script src="js-console.js"></script>
+    <script>
+        findSmallest(window);
+        findBiggest(window);
+        findSmallest(navigator);
+        findBiggest(navigator);
+        findSmallest(document);
+        findBiggest(document);
+
+        function findSmallest(object) {
+            var smallest = 'zzz';
+            for (var property in object) {
+                if (property<smallest) {
+                    smallest = property;
+                }
+            }
+            jsConsole.writeLine("The smallest lexicographically property in "+object+ " is "+smallest);
+        }
+        function findBiggest(object) {
+            var biggest = 'aaa';
+            for (var property in object) {
+                if (property > biggest) {
+                    biggest = property;
+                }
+            }
+            jsConsole.writeLine("The biggest lexicographically property in " + object + " is " + biggest);
+        }
+    </script>
+</body>
+</html>

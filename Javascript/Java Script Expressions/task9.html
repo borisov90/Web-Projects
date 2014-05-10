@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	function IsItIn() {
+		var pointX = parseInt(document.getElementById('inputnumber1').value);
+		var pointY = parseInt(document.getElementById('inputnumber2').value);
+		var center = 1.1;
+		var radius = 3;
+		var top = 1;
+		var left = -1;
+		var bottom = -1; //because height is 2 and top is 1.
+		var right = 5;
+		var isInsideCircle;
+		var isInsideRectangle;
+		
+
+		var inside = (((pointX - center) * (pointX - center)) + ((pointY - center)*(pointY - center)));
+
+		if (inside < (radius*radius)) {
+				isInsideCircle = true;
+		}
+		else {
+			isInsideCircle = false;
+		};
+
+		if ( ((pointX <= top) && (pointX >= bottom) && (pointY >= left) && (pointY <= right))) {
+			isInsideRectangle = true;
+		}
+		else {
+			isInsideRectangle = false;
+		};
+
+		var result;
+
+		if (isInsideCircle && !isInsideRectangle) {
+			result = "The point is within the circle and out of the rectangle!";
+		}
+		else {
+			result = "The point is not within the circle and out of the rectangle!";
+		};
+
+			document.getElementById('output').innerHTML = result; 
+		}
+	</script>
+	<header>
+        <h1>
+           Write an expression that checks for given point (x, y) if it is within the circle K( (1,1), 3) and out of the rectangle R(top=1, left=-1, width=6, height=2).
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber1">Enter the X coordinate</label>
+        <input type="number" id="inputnumber1">
+        <label for="inputnumber2">Enter the Y coordinate</label>
+        <input type="number" id="inputnumber2">
+    </div>
+    <footer>
+        <button onclick="IsItIn()">Is it in the circle/out of the rectangle?</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

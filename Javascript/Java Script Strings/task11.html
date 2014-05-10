@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task11</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function stringFormat() {
+        var output = arguments[0];
+ 
+            for (var i = 1; i < arguments.length; i++)
+                output = output.replace(new RegExp('\\{' + (i-1) + '\\}', "g"), arguments[i]);
+               
+            return output;
+        }
+ 
+        var format = "{0}, {1}, {0} text {2}";
+        var str = stringFormat(format, 1, "Pesho", "Gosho");
+       
+        jsConsole.writeLine(str);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function IsInCircle() {
+			var result = "";
+			var pointX = parseInt(document.getElementById('inputnumber1').value);
+			var pointY = parseInt(document.getElementById('inputnumber2').value);
+			var center = 0;
+			var radius = 5;
+			var inside = (((pointX - center) * (pointX - center)) + ((pointY - center)*(pointY - center)));
+
+			if (inside < (radius*radius)) {
+				result = "The point with the given coordinates [" + pointX + ":" + pointY + "] is inside the circle!"
+			}
+			else {
+				result = "The point with the given coordinates [" + pointX + ":" + pointY + "] is not inside the circle!"
+			};
+
+			document.getElementById('output').innerHTML = result;
+
+		}
+	</script>
+	<header>
+        <h1>
+           Write an expression that checks if given print (x,  y) is within a circle K(O, 5).
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber1">Enter the x coordinate</label>
+        <input type="number" id="inputnumber1">
+        <label for="inputnumber2">Enter the y coordinate:</label>
+        <input type="number" id="inputnumber2">
+    </div>
+    <footer>
+        <button  onclick="IsInCircle()">Is this point in the circle?</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Task2</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        var correctExpression = "((a+b)/5-d)";
+        var incorrectExpression = ")(a+b))";
+        jsConsole.writeLine(checkBrackets(correctExpression) + correctExpression);
+        jsConsole.writeLine(checkBrackets(incorrectExpression) + incorrectExpression);
+        function checkBrackets(input) {
+            var bracketcounter = 0;
+            var result;
+
+            for (var i = 0; i < input.length; i++) {
+                if (input[i] == "(") {
+                    bracketcounter++;
+                }
+                else if (input[i] == ")") {
+                    bracketcounter--;
+                }
+                else if (input[i] == "[") {
+                    bracketcounter++;
+                }
+                else if (input[i] == "]") {
+                    bracketcounter--;
+                }
+                else if (input[i] == "{") {
+                    bracketcounter++;
+                }
+                else if (input[i] == "}") {
+                    bracketcounter--;
+                }
+            }
+            if (bracketcounter == 0) {
+                return result = "all the brackets that were open are now closed! Good Job!";
+            }
+            else if (bracketcounter < 0 || bracketcounter > 0) {
+              	 return result = "you have left an open bracket!"
+            }
+            console.log(bracketcounter);
+            
+            return result;
+        }
+    </script>
+</body>
+</html>

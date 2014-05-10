@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	function Compare() {
+		var firstNumber = parseInt(document.getElementById('inputnumber1').value);
+		var secondNumber = parseInt(document.getElementById('inputnumber2').value);
+		var thirdNumber = parseInt(document.getElementById('inputnumber3').value);
+		var fourthNumber = parseInt(document.getElementById('inputnumber4').value);
+		var fifthNumber = parseInt(document.getElementById('inputnumber5').value);
+
+		var result;
+
+		result = Math.max(firstNumber, secondNumber, thirdNumber, fourthNumber, fifthNumber);
+
+		document.getElementById('output').innerHTML = result;
+	}
+</script>
+	<header>
+        <h1>
+         Write a script that finds the greatest of given 5 variables.
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber1">Enter the first number</label>
+        <input type="number" id="inputnumber1">
+        <label for="inputnumber2">Enter the second number</label>
+        <input type="number" id="inputnumber2">
+        <label for="inputnumber3">Enter the third number</label>
+        <input type="number" id="inputnumber3">
+        <label for="inputnumber4">Enter the second number</label>
+        <input type="number" id="inputnumber4">
+        <label for="inputnumber5">Enter the third number</label>
+        <input type="number" id="inputnumber5">
+    </div>
+    <footer>
+        <button  onclick="Compare()">Compare</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

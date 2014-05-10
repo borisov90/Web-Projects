@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions - Calling Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<div id="output"></div>
+	<script src="scripts/js-console.js"></script>		   
+	<script>		   
+		var testArr = new Array(2, 1, 1, 2, 3, 3, 2, 2, 2, 1);
+        var posToSearch = 2;
+        
+        printArray(testArr);
+        CheckNeightbours(testArr, posToSearch);
+        var answer = "";
+
+        function CheckNeightbours(testArr, posToSearch) {
+
+            for (var i = 1; i < testArr.length - 1; i++) {
+
+                if ((testArr[i] > testArr[i-1]) && (testArr[i] > testArr[i+1])) {
+                    answer = "The element at position " + i + "is bigger than his neightbours!";
+                    break;
+                }
+                else {
+                    answer = "-1";
+                }
+                
+            }
+
+            jsConsole.writeLine(answer);
+        }
+        function printArray(testArr) {
+           jsConsole.writeLine("The array is: "+testArr.join(","));
+        }
+	</script>
+</body>
+</html>

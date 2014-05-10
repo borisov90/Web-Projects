@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+	function CheckIfDevisable() {
+		var input = parseInt(document.getElementById('inputnumber').value);
+    	var result = "The number is ";
+    	if (input % 7 === 0 && input % 5 === 0) {
+    		result += "devisable by 7 and 5";
+    	}
+    	else {
+    		result += "not devisable by 7 and 5";
+    	};
+
+    	document.getElementById('output').innerHTML = result;
+	}
+
+	</script>
+    <header>
+        <h1>
+            Write a boolean expression that checks for given integer if it can be divided (without remainder) by 7 and 5 in the same time.
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber">Enter number here:</label>
+        <input type="number" id="inputnumber">
+    </div>
+    <footer>
+        <button  onclick="CheckIfDevisable()">Can it be devided by 5 and 7 ?</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

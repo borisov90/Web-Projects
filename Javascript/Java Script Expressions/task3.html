@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	function CalculateArea() {
+		var sideA = parseInt(document.getElementById('inputnumber1').value);
+		var sideB = parseInt(document.getElementById('inputnumber2').value);
+
+		var area = sideA * sideB;
+
+		document.getElementById('output').innerHTML = area;
+	}
+</script>
+	<header>
+        <h1>
+            Write an expression that calculates rectangle’s area by given width and height.
+        </h1>
+    </header>
+    <div>
+        <label for="inputnumber1">Enter the first number here:</label>
+        <input type="number" id="inputnumber1">
+        <label for="inputnumber2">Enter the second number here:</label>
+        <input type="number" id="inputnumber2">
+    </div>
+    <footer>
+        <button  onclick="CalculateArea()">Calculate Rectangle's Area</button>
+        <span id="output"></span>
+    </footer>
+</body>
+</html>

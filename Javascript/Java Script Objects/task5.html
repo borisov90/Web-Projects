@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles/js-console.css" rel="stylesheet" />  
+    <!--Write a function that checks if a given object contains a given property
+-->     
+</head>
+<body>        
+    <div id="js-console"></div>        
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function buildPerson(firstName, lastName, Age){
+            return {
+                firstName: firstName,
+                lastName:lastName,                
+                Age: Age,
+                toString: function toStr() {
+                    return 'Name: ' + this.firstName + ' ' + this.lastName + ' Aged: ' + this.Age;
+                }
+            }
+        }
+
+        var persons = [
+        {firstName: 'Mincho', lastName: 'Praznikov', Age: 92},
+        { firstName: 'Emo', lastName: 'Cholakov', Age: 40 },
+        { firstName: 'Hristina', lastName: 'Balinska', Age: 31 },
+        { firstName: 'Desi', lastName: 'Banova', Age: 25 }];
+        var maxAged = Number.MAX_VALUE;
+
+        var currentPerson = buildPerson(null,null,null);
+        
+        for (var i = 0; i < persons.length; i++) {
+            if (persons[i].Age < maxAged) {
+                maxAged = persons[i].Age;
+                currentPerson.firstName = persons[i].firstName;
+                currentPerson.lastName = persons[i].lastName;
+                currentPerson.Age = persons[i].Age;
+            }
+        }
+
+        jsConsole.writeLine(currentPerson);
+    </script>
+</body>
+</html>

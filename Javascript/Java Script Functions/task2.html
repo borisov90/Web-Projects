@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions - Calling Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="js-console"></div>
+	<label for="tb-input">Enter number</label>
+	<input type="number" id="tb-input">
+	<button onclick="LastDigit()">Submit</button>
+	<div id="output"></div>
+	<script src="scripts/js-console.js"></script>		   
+	<script>		   
+		function LastDigit() {
+			var number = parseInt(document.getElementById('tb-input').value);
+			var reversed = number.toString().split('').reverse().join('');
+			document.getElementById('output').innerHTML = reversed;
+		}				
+	</script>
+</body>
+</html>

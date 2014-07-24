@@ -1,0 +1,112 @@
+﻿body,
+section,
+footer,
+article,
+input,
+button,
+p,
+ul,
+li,
+a,
+span,
+aside {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  position: absolute;
+  width: 450px;
+  margin-left: 100px;
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 15px;
+  border-width: 3px;
+  text-align: center;
+  height: 280px;
+}
+body header {
+  margin-bottom: 55px;
+}
+body label {
+  font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  position: absolute;
+  top: 90px;
+  left: 140px;
+}
+body p {
+  margin-top: 400px;
+  border: 1px dashed black;
+  border-radius: 10px;
+  background-color: ActiveCaption;
+}
+body a {
+  color: black;
+  background-color: ActiveCaption;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  position: relative;
+}
+body a:hover {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #808080), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #808080 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#ffffff', GradientType=0);
+}
+body section p {
+  margin-top: 25px;
+}
+body section div p {
+  margin-top: 405px;
+}
+body #output {
+  background-image: url(../images/sheepsAndRams.gif);
+  position: absolute;
+  top: 0px;
+  left: 500px;
+  width: 480px;
+}
+body #xyzw-input {
+  border: 3px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 190px;
+  left: 50px;
+}
+body #xyzw-input:hover {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #808080), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #808080 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#ffffff', GradientType=0);
+}
+body #input-btn {
+  border: 3px solid gray;
+  border-radius: 10px;
+  padding: 5px;
+  position: absolute;
+  top: 190px;
+  left: 260px;
+}
+body #input-btn:hover {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #808080), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -o-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: -ms-linear-gradient(top, #808080 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #808080 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#808080', endColorstr='#ffffff', GradientType=0);
+}
+/*# sourceMappingURL=ramsAndSheeps.css.map */

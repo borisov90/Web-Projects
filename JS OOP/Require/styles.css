@@ -1,0 +1,16 @@
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.person-item {
+    border: 1px solid black;
+    width: 220px;
+    padding: 10px;
+}
+
+#selected {
+    border: 1px solid red;
+    width: 220px;
+    padding: 10px;
+}

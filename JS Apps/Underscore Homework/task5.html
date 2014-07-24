@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Underscore - task 5</title>
+</head>
+<body>
+	<h1>Sort the students by full name, if first name is alphabetically before last name!</h1>
+	<div id="output"></div>
+	<script src="scripts/libs/underscore.js"></script>
+	<script>
+	var countedLegs = 0;
+	var animal = Object.create({
+		init: function (fname, species, legs) {
+			this.fname = fname;
+			this.species = species;
+			this.legs = legs;
+			return this;
+		},
+		fullname : function() {
+			
+			return this.fname + " The " + this.species;
+		}
+	});
+
+	var animals = [
+		Object.create(animal).init('monkey', 'mammal', 2),
+		Object.create(animal).init('dog', 'mammal', 4),
+		Object.create(animal).init('cat', 'mammal', 4),
+		Object.create(animal).init('spider', 'insect', 6),
+		Object.create(animal).init('octopus', 'fish', 8),
+		Object.create(animal).init('centepede', 'insect', 100)
+	];
+
+   
+     _.each(animals, function(animal) {
+    	countedLegs += parseInt(animal.legs);
+    	console.log(countedLegs);
+    })
+    console.log(countedLegs);
+
+    var div = document.createElement("DIV");
+    var text = document.createTextNode(JSON.stringify(countedLegs));
+    div.appendChild(text);
+
+    var output  = document.getElementById("output");
+    output.appendChild(div);
+    
+	</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Underscore - task 4</title>
+</head>
+<body>
+	<h1>Sort the students by full name, if first name is alphabetically before last name!</h1>
+	<div id="output"></div>
+	<script src="scripts/libs/underscore.js"></script>
+	<script>
+	var animal = Object.create({
+		init: function (fname, species, legs) {
+			this.fname = fname;
+			this.species = species;
+			this.legs = legs;
+			return this;
+		},
+		fullname : function() {
+			
+			return this.fname + " The " + this.species;
+		}
+	});
+
+	var animals = [
+		Object.create(animal).init('monkey', 'mammal', 2),
+		Object.create(animal).init('dog', 'mammal', 4),
+		Object.create(animal).init('cat', 'mammal', 4),
+		Object.create(animal).init('spider', 'insect', 6),
+		Object.create(animal).init('octopus', 'fish', 8),
+		Object.create(animal).init('centepede', 'insect', 100)
+	];
+   
+    var sortedNames = _.sortBy(animals, "legs");
+ 	var firstNameBeforeLast = _.sortBy(sortedNames, "species");
+   	
+
+    console.log(firstNameBeforeLast);
+
+    var div = document.createElement("DIV");
+    var text = document.createTextNode(JSON.stringify(firstNameBeforeLast));
+    div.appendChild(text);
+
+    var output  = document.getElementById("output");
+    output.appendChild(div);
+    
+	</script>
+</body>
+</html>

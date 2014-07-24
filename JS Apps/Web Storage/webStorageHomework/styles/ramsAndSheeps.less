@@ -1,0 +1,101 @@
+﻿.linear-gradient(@from-color,@from-pos,@to-color,@to-pos) {
+    background: @to-color;
+    background: -moz-linear-gradient(top, @from-color @from-pos, @to-color @to-pos);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-color), color-stop(@to-pos,@to-color));
+    background: -webkit-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -o-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: -ms-linear-gradient(top, @from-color @from-pos,@to-color @to-pos);
+    background: linear-gradient(to bottom, @from-color @from-pos,@to-color @to-pos);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@{from-color}', endColorstr='@{to-color}',GradientType=0 );
+}
+//linear gradient
+
+body, section, footer, article, input, button, p, ul, li, a, span, aside {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    position: absolute;
+    width: 450px;
+    margin-left: 100px;
+    margin-top: 10px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+    border-width: 3px;
+    text-align: center;
+    height: 280px;
+
+    header{
+        margin-bottom: 55px;
+        
+    }
+    label {
+        font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+        position: absolute;
+        top: 90px;
+        left: 140px;
+    }
+    p {
+        margin-top: 400px;
+        border:1px dashed black;
+        border-radius: 10px;
+        background-color: ActiveCaption;
+    }
+    a {
+        color: black;
+        background-color: ActiveCaption;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-decoration: none;
+        position: relative;
+    }
+    a:hover{
+        .linear-gradient(gray, 0%, white, 100%);
+    }
+    section{
+        p {
+            margin-top: 25px;
+        }
+        div {
+            p{
+                margin-top: 405px;
+            }
+        }
+    }
+    #output{
+        background-image: url(../images/sheepsAndRams.gif);
+        position: absolute;
+        top: 0px;
+        left: 500px;
+        width: 480px;
+    }
+    
+    #xyzw-input {
+       border: 3px solid gray;
+       border-radius: 10px;
+       padding: 5px;
+       position: absolute;
+       top: 190px;
+       left: 50px;
+    }
+     #xyzw-input:hover {
+       .linear-gradient(gray, 0%, white, 100%);
+    }
+
+    #input-btn { 
+        border: 3px solid gray;
+        border-radius: 10px;
+        padding: 5px;
+        position: absolute;
+        top: 190px;
+        left: 260px;
+        
+    }
+    #input-btn:hover{
+         .linear-gradient(gray, 0%, white, 100%);
+
+    }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Underscore - task 6</title>
+</head>
+<body>
+	<h1>Sort the students by full name, if first name is alphabetically before last name!</h1>
+	<div id="output"></div>
+	<script src="scripts/libs/underscore.js"></script>
+	<script>
+	var book = Object.create({
+		init: function (bookName, author, legs) {
+			this.bookName = bookName;
+			this.author = author;
+			return this;
+		},
+		fullname : function() {
+			
+			return this.bookName + " " + this.author;
+		}
+	});
+
+	var books = [
+		Object.create(book).init('The monk who sold his Ferrari', 'Robin Sharma'),
+		Object.create(book).init('Who will cry when you die?', 'Robin Sharma'),
+		Object.create(book).init('Pride and Prejudice', 'Jane Austin'),
+		Object.create(book).init('Such, such were the joys', 'George Orwell'),
+		Object.create(book).init('The sun also rises', 'Ernest Hemingway'),
+		Object.create(book).init('The little prince', 'Antoine Exsupery')
+	];
+   
+    var sortedNames = _.countBy(books, "author");
+ 	var mostFrequentAuthor = _.first(sortedNames);
+   	
+
+    console.log(mostFrequentAuthor);
+
+    var div = document.createElement("DIV");
+    var text = document.createTextNode(JSON.stringify(sortedNames));
+    div.appendChild(text);
+
+    var output  = document.getElementById("output");
+    output.appendChild(div);
+    
+	</script>
+</body>
+</html>

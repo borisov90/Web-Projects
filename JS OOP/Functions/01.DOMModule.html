@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom Module</title>
+    <style>
+    .button:hover {
+        background-color: yellow;
+    }
+    </style>
+</head>
+<body>
+	<ul>
+		<li>First</li>
+		<li>
+			<a class="button">Click</a>
+		</li>
+		<li>Second</li>
+		<li>
+			<a class="button">Click</a>
+		</li>
+		<li>Third</li>
+		<li>
+			<a class="button">Click</a>
+		</li>
+		<li>Fourth</li>
+		<li>Fifth</li>
+		<li>Sixth</li>
+	</ul>
+	<div id="output">
+	</div>
+    <div id="container">
+    </div>
+	<script src="scripts/domModule.js"></script>
+	<script>
+	var div = document.createElement("div");
+	div.innerHTML = "Appended child";
+    div.style.background = "orange";
+	domModule.appendChild(div, "#output");
+	domModule.removeChild("ul","li:first-child"); 
+	domModule.addHandler("a.button", 'click', function(){alert("Clicked")});
+	for (var i = 0; i < 105; i++) {
+		domModule.appendToBuffer("#container", div.cloneNode(true));
+	};
+	</script>
+</body>
+</html>

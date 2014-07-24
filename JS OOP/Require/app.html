@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Combo Box</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper"></div>
+    <script type="text/x-handlebars-template" id="person-template">
+        <div class="person-item" id="person-item-{{id}}">
+            <strong class="person-name">{{name}}</strong><p class="person-age">Age: {{age}}</p>
+            <img src="{{avatarUrl}}"  />
+        </div>
+    </script>
+    <script src="Scripts/libs/require.js" data-main="Scripts/app"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 2</title>
+</head>
+<body>
+	<script>
+		Array.prototype.remove = function(element) {
+			var newArr = new Array();
+			for (var i in this) {
+				if (this[i] != element) {
+					newArr.push(this[i]);
+				}
+			}
+			return newArr;
+		}
+
+		var arr = [1, 2, 1, 4, 1, 1, 3, 4, 1, 111, 3, 2, 1, "1"];
+
+		var answer = arr.remove(1);
+
+		for (var i = 0; i < answer.length - 1; i++) {
+			 document.write(answer[i] + " ");
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Underscore - task 1</title>
+</head>
+<body>
+	<h1>Sort the students by full name, if first name is alphabetically before last name!</h1>
+	<div id="output"></div>
+	<script src="scripts/libs/underscore.js"></script>
+	<script>
+	var Person = Object.create({
+		init: function (fname, lname, age) {
+			this.fname = fname;
+			this.lname = lname;
+			this.age = age;
+			return this;
+		},
+		fullname : function() {
+
+			return this.fname + " " + this.lname;
+		}
+	});
+
+	var people = [
+		Object.create(Person).init('Doncho', 'Minkov', 45),
+		Object.create(Person).init('Nikolay', 'Kostov', 34),
+		Object.create(Person).init('Aneliya', 'Stoyanova', 18),
+		Object.create(Person).init('Ivaylo', 'Kenov', 87),
+		Object.create(Person).init('Todor', 'Stoyanov', 56),
+		Object.create(Person).init('Todor', 'Minkov', 56),
+		Object.create(Person).init('Doncho', 'Genchev', 45),
+		Object.create(Person).init('Doncho', 'Genchev', 45)
+	];
+
+
+    var countByFirstName = _.countBy(people, function (person) {
+    	return person.fname;
+    });
+
+    var mostCommonFirstName = _.max(countByFirstName);
+    countByFirstName = _.invert(countByFirstName);
+ 	console.log(countByFirstName[mostCommonFirstName]);
+ 	console.log(mostCommonFirstName);
+
+    var countByLastName = _.countBy(people, function (person) {
+    	return person.lname;
+    });
+    
+    var mostCommonLastName = _.max(countByLastName);
+    countByLastName = _.invert(countByLastName);
+    console.log(countByLastName[mostCommonLastName]);
+    console.log(mostCommonLastName);
+   //	var stringified = JSON.stringify(sortedNames);
+
+   
+
+    var div = document.createElement("DIV");
+    var fnames = document.createTextNode(countByFirstName);
+    var lnames = document.createTextNode(countByLastName);
+    var announceFirstNames = document.createTextNode("These are the most common first names:");
+    var announceLastNames = document.createTextNode("These are the most common last names:");
+    div.appendChild(announceFirstNames);
+    div.appendChild(fnames);
+    div.appendChild(announceLastNames);
+    div.appendChild(lnames);
+
+    var output  = document.getElementById("output");
+    output.appendChild(div);
+    
+	</script>
+</body>
+</html>

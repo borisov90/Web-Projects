@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Underscore - task 1</title>
+</head>
+<body>
+	<h1>Sort the students by full name, if first name is alphabetically before last name!</h1>
+	<div id="output"></div>
+	<script src="scripts/libs/underscore.js"></script>
+	<script>
+	var Person = Object.create({
+		init: function (fname, lname, age) {
+			this.fname = fname;
+			this.lname = lname;
+			this.age = age;
+			return this;
+		},
+		fullname : function() {
+
+			return this.fname + " " + this.lname;
+		}
+	});
+
+	var people = [
+		Object.create(Person).init('Doncho', 'Minkov', 45),
+		Object.create(Person).init('Nikolay', 'Kostov', 34),
+		Object.create(Person).init('Aneliya', 'Stoyanova', 18),
+		Object.create(Person).init('Ivaylo', 'Kenov', 87),
+		Object.create(Person).init('Todor', 'Stoyanov', 56)
+	];
+
+    function compareAlphabetically(person) {
+    	if (person.fname < person.lname) {
+    		return -1;
+    	}
+    }
+
+    var firstNameBeforeLast = _.filter(people, compareAlphabetically);
+    var sortedNames = _.sortBy(firstNameBeforeLast, "fname");
+   	var stringified = JSON.stringify(sortedNames);
+
+    console.log(stringified);
+
+    var div = document.createElement("DIV");
+    var text = document.createTextNode(stringified);
+    div.appendChild(text);
+
+    var output  = document.getElementById("output");
+    output.appendChild(div);
+    
+	</script>
+</body>
+</html>

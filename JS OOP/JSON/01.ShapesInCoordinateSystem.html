@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 1</title>
+</head>
+<body>
+<div id="output"></div>
+	<script>
+		var firstPointA = createPoint(5, 6);
+		var secondPointA= createPoint(4, 4);
+		var firstPointB = createPoint(6, 6);
+		var secondPointB = createPoint(7, 4);
+		var firstPointC = createPoint(8, 6);
+		var secondPointC = createPoint(4, 4);
+		var lineA = createLine(firstPointA, secondPointA);
+		var lineB = createLine(firstPointB, secondPointB);
+		var lineC = createLine(firstPointC, secondPointC);
+		var lineALength = calculateDistance(firstPointA, secondPointA);
+		var lineBLength = calculateDistance(firstPointB, secondPointB);
+		var lineCLength = calculateDistance(firstPointC, secondPointC);
+
+		alert(formATriangle(lineALength, lineBLength, lineCLength));
+		//alert(line.distance());
+
+		function createPoint(x, y) {
+			return {
+				x : x,
+				y : y
+			}
+		}
+		function createLine(pointA, pointB) {
+			return {
+				pointA : pointA,
+				pointB : pointB
+			}
+		}
+		function calculateDistance(pointA, pointB) {
+			 var differenceOfX = pointB.x - pointA.x;
+			 var differenceOfY = pointB.y - pointA.y;
+			 var distance = Math.sqrt((differenceOfY * differenceOfX) + (differenceOfY * differenceOfY));
+			 return distance;
+		}
+		function formATriangle(lineA, lineB, lineC) {
+			var firstRequirement = false;
+			var secondRequirement = false;
+			var thirdRequirement = false;
+
+			if ((lineA + lineB) > lineC) {
+				firstRequirement = true;
+			}
+			if ((lineC + lineB) > lineA) {
+				secondRequirement = true;
+			}
+			if ((lineC + lineA) > lineB) {
+				thirdRequirement = true;
+			}
+
+			if (firstRequirement && secondRequirement && thirdRequirement) {
+				return "The three sides form a triangle!"
+
+			}
+			else {
+				return "These sides does not form a triangle!"
+			}
+		}
+
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+C:\Users\Georgi\Desktop\JS Apps\Web Storage\webStorageHomework\webStorageHomework\bin\webStorageHomework.dll.config
+C:\Users\Georgi\Desktop\JS Apps\Web Storage\webStorageHomework\webStorageHomework\bin\webStorageHomework.dll
+C:\Users\Georgi\Desktop\JS Apps\Web Storage\webStorageHomework\webStorageHomework\bin\webStorageHomework.pdb
+C:\Users\Georgi\Desktop\JS Apps\Web Storage\webStorageHomework\webStorageHomework\obj\Debug\webStorageHomework.csprojResolveAssemblyReference.cache
+C:\Users\Georgi\Desktop\JS Apps\Web Storage\webStorageHomework\webStorageHomework\obj\Debug\webStorageHomework.dll
+C:\Users\Georgi\Desktop\JS Apps\Web Storage\webStorageHomework\webStorageHomework\obj\Debug\webStorageHomework.pdb
